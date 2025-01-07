@@ -6,7 +6,7 @@ const FANART_API_KEY = '2adb3d3494a5992ebbaf2ada4c313189';
 // فتح قاعدة بيانات IndexedDB
 const openDB = () => {
     return new Promise((resolve, reject) => {
-        const request = indexedDB.open('ContentDatabase', 3); // زيادة الإصدار إلى 3
+        const request = indexedDB.open('ContentDatabase', 16); // زيادة الإصدار إلى 3
 
         request.onupgradeneeded = (event) => {
             const db = event.target.result;
