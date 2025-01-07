@@ -1,7 +1,7 @@
 // فتح قاعدة بيانات IndexedDB
 const openDB = () => {
     return new Promise((resolve, reject) => {
-        const request = indexedDB.open('ContentDatabase', 3); // الإصدار 3
+        const request = indexedDB.open('ContentDatabase', 16); // الإصدار 3
 
         request.onupgradeneeded = (event) => {
             const db = event.target.result;
