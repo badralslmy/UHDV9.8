@@ -1,7 +1,7 @@
 // استرجاع جميع المحتويات من IndexedDB
 const getAllContentFromDB = async () => {
     return new Promise((resolve, reject) => {
-        const request = indexedDB.open('ContentDatabase', 3);
+        const request = indexedDB.open('ContentDatabase', 16);
 
         request.onsuccess = () => {
             const db = request.result;
